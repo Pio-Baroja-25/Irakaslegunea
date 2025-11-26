@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pio Baroja</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Tahoma';
+      src: url('tahoma.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url("fondo_azaroak25.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Tahoma', sans-serif;
+      background-attachment: fixed;
+    }
+
+    #erdikoa {
+      background-color: white;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1200px;
+      border-radius: 30px;
+      border: 10px solid gainsboro;
+      padding: 2%;
+      box-sizing: border-box;
+    }
+
+    #zerbitzuak, #jarraibideak, #dokumentuak {
+      border-radius: 10px;
+      padding: 2%;
+      margin-bottom: 20px;
+    }
+
+    #zerbitzuak {
+      background-color: #E9BCB9;
+    }
+
+    #jarraibideak {
+      background-color: #F2E982;
+      flex: 1;
+    }
+
+    #dokumentuak {
+      background-color: #80CFC2;
+      flex: 1;
+    }
+
+   
+
+    /* Contenedor inferior (dos columnas en pantallas grandes) */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Imagenes */
+    img {
+      /*max-width: 120px;*/
+      height: auto;
+      margin: 5px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .lotura :hover {
+      animation: igo-jaitsi 0.6s ease-in-out;
+    }
+
+    @keyframes igo-jaitsi {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* 🔹 Responsive: ajustar columnas en pantallas pequeñas */
+    @media (max-width: 900px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      #jarraibideak, #dokumentuak {
+        width: 100%;
+      }
+
+      img {
+        max-width: 90px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      img {
+        max-width: 70px;
+      }
+
+      #erdikoa {
+        padding: 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+<div id="erdikoa">
+  <a href="https://piobaroja.eus" target="_blank" rel="noopener noreferrer"><img src="pio_logoa_DEF_feminista.png"></a> 
+  <div id="zerbitzuak">
+    <div id="izenburua"><img src="botoi_horizontalak_zerbitzuak.png"></div> 
+    
+    <a href="https://gmail.com" target="_blank"  rel="noopener noreferrer" class="lotura"><img src="01_korreoa.png" ></a>
+    <a href="https://piobaroja.inika.net/eInika/login.aspx?ReturnUrl=/einika/default.aspx" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_02_inika.png"></a>
+    <a href="https://elearning24.hezkuntza.net/013013/login/index.php/default.aspx"  target="_blank" rel="noopener noreferrer" class="lotura"><img src="03_moodle.png"></a>
+    <a href="egutegia.pdf" target="_blank" rel="noopener noreferrer" class="lotura"><img src="04_egutegia.png" ></a>
+    <a href="https://docs.google.com/spreadsheets/d/1ebArLW_XpAKHmmCkA5t6Gn_9LVpOMVL95niUvk0mAAE/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="lotura"><img src="05_agenda.png"></a>
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_06_google.png"></a>
+    <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_07_drive.png"></a>
+    <a href="http://barojasariak26.eus" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_08_barojasari.png"></a>
+  
+  </div>
+      
+  <div class="flex-container">
+    <div id="jarraibideak"> 
+      <div id="izenburua"><img src="botoi_horizontalak_jarraibideak.png"></div>
+      
+      <a href="https://docs.google.com/document/d/14Ejdr-xYlfLd5DNUoRqkzoOnJPnDPfSOojccwuYsffQ/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="lotura"><img src="08_mintegiburua.png" class="lotura"></a>
+      <a href="https://docs.google.com/document/d/1f_-cmWQcxYsrHhEC_iRRLQYjKMUOMeq6Yf9W6IVJcL8/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_09_tutorea.png" class="lotura"></a>
+      <a href="https://docs.google.com/document/d/1INpDtKsGm56FcixXJiUbxank7pbMtxMz51tYEgQ08sE/edit?tab=t.0#bookmark=id.4n0rs34tvrvo" target="_blank" rel="noopener noreferrer" class="lotura"><img src="botoia_10_irakaslea.png"></a>
+    </div>
+
+    <div id="dokumentuak">
+      <div id="izenburua"> <img src="botoi_horizontalak_dokumentazioa.png"></div>
+      
+      <a href="https://drive.google.com/drive/folders/1l7H5qKzui0yV28CYbn8A3FoAW68VT-ME" class="lotura" target="_blank" rel="noopener noreferrer"><img src="botoia_11_ikaste_doku.png" class="lotura"></a>
+      <a href="https://drive.google.com/drive/folders/0AFkKZq-7fPR-Uk9PVA" class="lotura" target="_blank" rel="noopener noreferrer"><img src="botoia_12_ikas_doku.png" class="lotura"></a>
+      <!-- <a href="https://drive.google.com/drive/folders/0AFkKZq-7fPR-Uk9PVA" class="lotura" target="_blank" rel="noopener noreferrer"><img src="botoia_13_programazioak.png" class="lotura"></a> -->
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
